@@ -1,0 +1,229 @@
+/* Elementos principales página web */
+body {
+  background: url(../multimedia/img/fondo3.jpg);
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo de la página */
+.Logo {
+  border-radius: 15px;
+  transition: width 1s;
+  transform: scale(1, 1);
+}
+
+.Logo:hover {
+  width: 150px;
+}
+
+/* Menu hover */
+
+#menu li a {
+  color: white;
+}
+
+#menu li a:hover {
+  color: black;
+  transition: all 0.3s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.paddingTB {
+  padding-top: 20px;
+  padding-bottom: auto;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0%;
+}
+
+.carousel-inner {
+  padding-top: 10px;
+}
+
+/* Texto principal de cada sección en la página web */
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  width: 100%;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 1s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Iconos redes sociales */
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Sección empleadores */
+.video {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+}
+
+/* Sección proyectos */
+.listaBeneficios li {
+  color: white;
+  list-style: circle;
+  margin-left: 30px;
+}
+
+.listaTecnica li {
+  color: white;
+  list-style: circle;
+  margin-left: 30px;
+}
+
+.imagenProyecto {
+  width: 500px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Sección contacto */
+#Formulario {
+  width: 100%;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container__textoFormulario {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Sección blog */
+.textoBlog {
+  background: url(../multimedia/img/blog.png);
+  background-size: contain;
+  padding: 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Vista desktop */
+@media only screen and (max-width: 1920px) {
+  #menu {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .navbar-nav,
+  .navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  p {
+    font-size: 18px;
+    color: black;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Vista mobile */
+@media only screen and (max-width: 768px) {
+  .Logo {
+    display: block;
+    margin: auto;
+  }
+
+  #menu {
+    font-size: 18px;
+  }
+
+  h3,
+  p,
+  li,
+  th {
+    font-size: 15px;
+    color: black;
+  }
+}
+
+/** Aplicando SASS **/
+h3 {
+  background-color: rgba(255, 255, 255, 0.432);
+  color: black;
+  text-align: center;
+}
+
+.Logo {
+  width: 100px;
+}
+
+/* Margen en el cuadro de la sección proyectos */
+.listaTecnica,
+.listaBeneficios li {
+  margin-left: 30px;
+}

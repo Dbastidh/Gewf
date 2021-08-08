@@ -1,0 +1,22 @@
+/** Aplicando SASS **/
+$logo: 50px;
+$colorbackh3: rgba(255, 255, 255, 0.432);
+$colorletrash3: black;
+
+h3 {
+  background-color: $colorbackh3;
+  color: colorletrash3;
+  text-align: center;
+}
+
+.Logo {
+  width: $logo * 2;
+}
+
+$margenlistas: 29px;
+
+/* Margen en el cuadro de la sección proyectos */
+.listaTecnica,
+.listaBeneficios li {
+  margin-left: $margenlistas + 1;
+}

@@ -1,0 +1,43 @@
+/* Vista desktop */
+@media only screen and (max-width: 1920px) {
+  #menu {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .navbar-nav,
+  .navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  p {
+    font-size: 18px;
+    color: black;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Vista mobile */
+@media only screen and (max-width: 768px) {
+  .Logo {
+    display: block;
+    margin: auto;
+  }
+
+  #menu {
+    font-size: 18px;
+  }
+
+  h3,
+  p,
+  li,
+  th {
+    font-size: 15px;
+    color: black;
+  }
+}

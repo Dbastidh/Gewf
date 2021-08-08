@@ -1,0 +1,102 @@
+/* Atributos generales que se presentan en todas las secciones */
+body {
+  background: url(../multimedia/img/fondo3.jpg);
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo de la página */
+.Logo {
+  border-radius: 15px;
+  transition: width 1s;
+  transform: scale(1, 1);
+}
+
+.Logo:hover {
+  width: 150px;
+}
+
+/* Menu hover */
+#menu li a {
+  color: white;
+}
+
+#menu li a:hover {
+  color: black;
+  transition: all 0.3s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.paddingTB {
+  padding-top: 20px;
+  padding-bottom: auto;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0%;
+}
+
+.carousel-inner {
+  padding-top: 10px;
+}
+
+/* Texto principal de cada sección en la página web */
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  width: 100%;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 1s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Iconos redes sociales */
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}

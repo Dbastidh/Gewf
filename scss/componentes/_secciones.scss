@@ -1,0 +1,64 @@
+/* Sección empleadores */
+.video {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+}
+
+/* Sección proyectos */
+.listaBeneficios li {
+  color: white;
+  list-style: circle;
+  margin-left: 30px;
+}
+
+.listaTecnica li {
+  color: white;
+  list-style: circle;
+  margin-left: 30px;
+}
+
+.imagenProyecto {
+  width: 500px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Sección contacto */
+#Formulario {
+  width: 100%;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container__textoFormulario {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Sección blog */
+.textoBlog {
+  background: url(../multimedia/img/blog.png);
+  background-size: contain;
+  padding: 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+}
