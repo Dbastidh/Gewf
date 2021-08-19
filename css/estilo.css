@@ -12,6 +12,7 @@ body {
 
 /* Logo del sitio web */
 .Logo {
+  padding-top: 5px;
   border-radius: 15px;
   transition: width 1s;
   transform: scale(1, 1);
@@ -127,7 +128,6 @@ footer {
   width: 500px;
   border-radius: 10px;
   display: block;
-  margin: auto;
   margin-top: 10px;
 }
 
@@ -194,9 +194,14 @@ footer {
 
 /* Vista mobile */
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .Logo {
     display: block;
     margin: auto;
+    padding-top: 5px;
   }
 
   #menu {
@@ -209,6 +214,10 @@ footer {
   th {
     font-size: 15px;
     color: black;
+  }
+
+  .imagenProyecto {
+    width: 400px;
   }
 }
 
